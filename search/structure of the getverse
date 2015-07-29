@@ -1,0 +1,31 @@
+structure of the getverse.py
+1. first query with book,chapter,verse will fetch the versenumber
+2. using the versenumber the second query will fetch the range of the verses
+
+if check if its a heading
+	if first verse of the chapter (need to display book chap)
+		if its the selected verse(bold printing)
+
+		else print without bold
+
+	else print only the verse number and the verse
+		if its the selected verse(bold printing)
+
+		else print without bold
+
+
+else
+	if first verse of the chapter (need to display book chap)
+		if its the selected verse(bold printing)
+
+		else print without bold
+
+	else print only the verse number and the verse
+		if its the selected verse(bold printing)
+
+		else print without bold
+
+
+this is coz.. the heading can be in the beginning of the chapter or in the middle also. 
+			  the first verse of the chapter shld display the book,chapter and verse number
+			  the selected verse can occur anywhere tat is either in the heading block or the firstverse block.. 

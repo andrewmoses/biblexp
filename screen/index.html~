@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="ReadTheBible" content="">
+    <meta name="author" content="bible">
+
+    <title>bibleXP</title>
+    <link rel="shortcut icon" href="bibleXP.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--css for the slider plugin-->
+    <link rel="stylesheet" href="css/slider.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/fractionslider.css">
+    <!-- Custom CSS -->  
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">  
+
+   <!-- <script type="text/javascript">
+    function success(){
+        var xmlhttp;
+        if(window.XMLHttpRequest)
+            {xmlhttp=new XMLHttpRequest();}
+        else
+            {xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
+        xmlhttp.onreadystatechange=function()
+        {
+            if(xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                document.getElementById("change").innerHTML=xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET","change.html",true);
+        xmlhttp.send();
+        javascript:top.location = 'index.html';return true;
+    }
+    </script> -->
+<script type="text/javascript">
+ 
+  if (screen.width <= 800) {
+    window.location = "http://117.193.178.172/";
+  }
+ 
+</script>
+</head>
+
+<!--body section starts-->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">bibleXP</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#video">Video</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#story">Story</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#prayer">Prayer Points</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#feedback">FeedBack</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- Intro Section -->
+<header id="head">
+    <div class="container"><br><br><br>
+        <div class="intro-text" id="top">
+            <div class="intro-lead-in">Know the true word!</div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <ul class="list-inline banner-menu-buttons">
+                        <li>
+                            <a href="spreaditwork/index.html" class="btn btn-default btn-lg"><i class="fa fa-book fa-fw"></i> The Holy Bible</a>
+                        </li>
+                        <!--<li>
+                            <a class="btn btn-default btn-lg"><i class="fa fa-question fa-fw"></i> Quiz</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-default btn-lg"><i class="fa fa-sign-in fa-fw"></i> Sign In</a>
+                        </li>-->
+                        </ul>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+                </a>
+        </div>
+    </div>
+</header>
+
+
+<!-- about Section -->
+<section id="about" class="about-section">
+    <div class="slider-wrapper">
+        <div class="responisve-container">
+            <div class="slider">
+                <div class="fs_loader"></div>
+                <div class="slide">
+                                
+                    <img    src="images/mountains.png" 
+                                width="1000" height="600"        
+                                data-position="0,0" data-in="bottom" data-delay="">
+                                
+                    <img    src="images/jesus.png" 
+                                width="200" height="402"
+                                data-position="200,80" data-in="left" data-delay="50" data-out="left">
+                
+                    <p      class="lightwhite"           
+                                data-position="150,250" data-in="top" data-out="top">I am the resurrection and the life.</p>
+                        
+                    <p      class="darkwhite"    
+                                data-position="220,350" data-in="left" data-out="right">The one who believes in me will live,</p>        
+                    <p      class="white"    
+                                data-position="290,450" data-in="right" data-out="left">even though they die</p> 
+                        
+                </div>
+                <div class="slide" data-in="slideLeft">
+
+                    <img    src="images/land.jpg" width="1000" height="600" data-position="0,0" data-in="fade" data-delay="0" data-out="right">
+                    <img    src="images/stairs.png" width="200" height="600" data-position="150,400" data-in="right" data-step="4" data-out="left">
+                    <img    src="images/shep.png" width="225" height="359" data-position="220,650" data-in="bottom" data-step="3" data-out="right">                                                      
+                    <p      class="grey"             
+                                data-position="130,30" data-in="top" data-out="top">For God so loved the world that</p>
+        
+                    <p      class="grey"  
+                                data-position="130,500" data-in="bottom" data-step="2">he gave his one and only Son,</p>        
+                    <p      class="grey"  
+                                data-position="170,150" data-in="bottom" data-step="3" >that whoever believes in him shall not perish</p>
+                    <p      class="grey"  
+                                data-position="210,300" data-in="bottom" data-step="4" >but have eternal life.</p>    
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- video Section -->
+<section id="video" class="video-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 playdiv" id="playtitle"><br><br><br><br>
+                <h1 class="playtitle">Just click the play button and watch the video </h1>
+            </div>
+            <div class="col-lg-4 col-lg-push-5">
+                <a role="button" class="btn" data-toggle="modal" href="#myModal" id="btn"><br><br>
+                <img src="images/play.png" width="300" height="300" id="play" class="img-responsive play"></a><br><br>
+                <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Take a look at this video!!!</h4>
+                                </div>
+                            <div class="modal-body">
+                            <!-- 16:9 aspect ratio video from youtube -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ntwX3nn1sVI"></iframe>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div><!--end of video modal-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- story Section -->
+<section id="story" class="story-section">
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Story</h2>
+                    <h3 class="section-subheading text-muted">The Gospel</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="images/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">A man's heart was pure and innocent in the begining</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">But it was not so for a long period of time! So what happened to this pure and innocent heart???</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="images/2.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">The worldly desires</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Man's heart was tempted and he sinned against God. The worldly desires made man to do things that was not right. In today's world adictions to social media, smoking and drinking habbits, lust and adultry has made man tied up in sins. So his pure heart became <strong>impure</strong> and destroyed. So the relationship between God and man weakened.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <h3 class="section-subheading text-muted">As a result..</h3>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="images/5.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                        <h3 class="section-subheading text-muted">So is it OVER!!!!</h3>
+                        <h2 class="section-heading"><strong>NO!!</strong></h2>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="images/3.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Jesus!</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">God so loved the world that he sent his only son to deliver man from his sins. Jesus took away all the sins of man by crucifying himself on the cross.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="images/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">What happened to jesus?</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">While delivering man from his sins, jesus himself became dirty like the heart of man with sins. So why did jesus do it for us??</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                        <h3 class="section-subheading text-muted">Because</h3>
+                        <h2 class="section-heading">He <strong>LOVES</strong> You!!</h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- prayer Section -->
+<section id="prayer" class="prayer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            <h2 class="section-feedback">Prayer Points</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+            <form name="sentMessage" id="prayer" action="prayer.py" method="get">
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Prayer Points</label>
+                        <textarea rows="5" class="form-control" placeholder="Prayer Points" name="prayertext" id="prayertext" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12" id="change">
+                        <button type="submit" class="btn btn-success btn-lg">Send</button>
+                    </div>
+                </div>
+            </form>
+             </div>
+         </div>  
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="feedback" class="feedback-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            <h2 class="section-feedback">FeedBack</h2>   
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+            <form name="sentMessage" id="contactForm" action="feed.py" method="get">
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Email Address</label>
+                        <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>FeedBack</label>
+                        <textarea rows="5" class="form-control" placeholder="FeedBack" id="message" name="message" required></textarea>
+ 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <button type="submit" class="btn btn-success btn-lg">Send</button>
+                    </div>
+                </div>
+            </form>
+             </div>
+         </div>
+    </div>
+</section>
+
+<!--footer with menu-->
+<footer id="footer" class"footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#page-top" class="page-scroll">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#">The Bible</a>
+                        </li>
+                        <!--<li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#">Quiz</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#">Sign In</a>
+                        </li>-->
+                    </ul>
+                    <center><p class="copyright text-muted small">Copyright &copy; bibleXP 2015. All Rights Reserved</p></center>
+                </div>
+            </div>
+        </div>
+
+</footer>
+
+    <!--slider script-->
+    <script type="text/javascript" src="js/jquery.cslider.js"></script>
+    <script type="text/javascript">
+        $(function() {
+        $('#da-slider').cslider({
+            autoplay    : true,
+            bgincrement : 450
+            });
+            });
+    </script>
+    <!--parallax working sript and plugins-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('#head').parallax("50%", 0.1);
+        $('#video').parallax("50%", 0.1);
+        $('#prayer').parallax("50%", 0.1);
+        $('#feedback').parallax("50%", 0.1);
+        })
+    </script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--slider plugin-->
+    <script src="js/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>    
+    <script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
+    <!-- custom javascript scrolling-nav and for animated header while scrolling -->
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script> 
+
+
+</body>
+</html>

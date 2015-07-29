@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!--link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bibleXP - NIV </title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+ 
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+    <!--link rel="stylesheet" href="style.css"-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'-->
+
+    
+
+
+    <style>
+
+    body{
+   
+    background-color:#ecf0f1;
+  
+    
+    
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+    }
+
+    
+
+
+
+
+    .col-centered{
+    float: none;
+    margin: 0 auto;
+    width: 50%; 
+    }
+
+    .col-right{
+    float: right;
+    margin: 0 auto;
+    }
+    .form-controlcus{
+
+      padding:10px 16px;font-size:20px;font-family: 'Quicksand', sans-serif;border-radius:6px
+
+      }
+
+    .fostyle{
+      font-family: 'Quicksand', sans-serif;font-weight: 400;color:#FFFFFF;
+    }
+
+    .fostyle1{
+      font-family: 'Quicksand', sans-serif;font-weight: 700;color:#FFFFFF;font-size:40px;margin-bottom: 0px;
+      text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    .fostyle2{
+      font-family: 'Quicksand', sans-serif;font-weight: 400;color:#FFFFFF;font-size:40px;
+    }
+    .btn1{
+      border:0px solid transparent;background-color:#000000;
+
+    }
+
+    .form-control1:focus{border-color:#505050;outline:0;-webkit-box-shadow:inset 0 0px 0px rgba(0,0,0,.075),0 0 0px rgba(102,175,233,.6);box-shadow:inset 0 0px 0px rgba(0,0,0,.075),0 0 0px rgba(102,175,233,.6)}
+
+    .scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+  #myDiv{
+margin-top: 10px;
+font-size: medium;
+
+}
+
+
+#myDivtep{
+margin-top: 10px;
+font-size: medium;
+
+}
+
+#myDiv a:hover{
+
+text-decoration: none;}
+
+  #headstat{
+  position: fixed;
+}
+
+a.colman{
+
+  color:#009900;
+}
+
+
+    </style>
+
+    <!-- Custom CSS -->  
+    <link href="css/custom1.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">  
+
+
+  </head>
+  <body>
+   <nav id = 'headstat' class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">bibleXP</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a href="#" class="btnum dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Books <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu1 scrollable-menu" role="menu">
+            <li onclick="getPaging(this.id)" id="Genesis"><a tabindex="-1" href="#">Genesis</a></li>
+              <li onclick="getPaging(this.id)" id="Exodus"><a tabindex="-1" href="#">Exodus</a></li>
+              <li onclick="getPaging(this.id)" id="Leviticus"><a tabindex="-1" href="#">Leviticus</a></li>
+              <li onclick="getPaging(this.id)" id="Numbers"><a tabindex="-1" href="#">Numbers</a></li>
+              <li onclick="getPaging(this.id)" id="Deuteronomy"><a tabindex="-1" href="#">Deuteronomy</a></li>
+              <li onclick="getPaging(this.id)" id="Joshua"><a tabindex="-1" href="#">Joshua</a></li>
+              <li onclick="getPaging(this.id)" id="Judges"><a tabindex="-1" href="#">Judges</a></li>
+              <li onclick="getPaging(this.id)" id="Ruth"><a tabindex="-1" href="#">Ruth</a></li>
+              <li onclick="getPaging(this.id)" id="1Samuel"><a tabindex="-1" href="#">1 Samuel</a></li>
+              <li onclick="getPaging(this.id)" id="2Samuel"><a tabindex="-1" href="#">2 Samuel</a></li>
+              <li onclick="getPaging(this.id)" id="1Kings"><a tabindex="-1" href="#">1 Kings</a></li>
+              <li onclick="getPaging(this.id)" id="2Kings"><a tabindex="-1" href="#">2 Kings</a></li>
+              <li onclick="getPaging(this.id)" id="1Chronicles"><a tabindex="-1" href="#">1 Chronicles</a></li>
+              <li onclick="getPaging(this.id)" id="2Chronicles"><a tabindex="-1" href="#">2 Chronicles</a></li>
+              <li onclick="getPaging(this.id)" id="Ezra"><a tabindex="-1" href="#">Ezra</a></li>
+              <li onclick="getPaging(this.id)" id="Nehemiah"><a tabindex="-1" href="#">Nehemiah</a></li>
+              <li onclick="getPaging(this.id)" id="Esther"><a tabindex="-1" href="#">Esther</a></li>
+              <li onclick="getPaging(this.id)" id="Job"><a tabindex="-1" href="#">Job</a></li>
+              <li onclick="getPaging(this.id)" id="Psalm"><a tabindex="-1" href="#">Psalm</a></li>
+              <li onclick="getPaging(this.id)" id="Proverbs"><a tabindex="-1" href="#">Proverbs</a></li>
+              <li onclick="getPaging(this.id)" id="Ecclesiastes"><a tabindex="-1" href="#">Ecclesiastes</a></li>
+              <li onclick="getPaging(this.id)" id="SongofSongs"><a tabindex="-1" href="#">Song of Songs</a></li>
+              <li onclick="getPaging(this.id)" id="Isaiah"><a tabindex="-1" href="#">Isaiah</a></li>
+              <li onclick="getPaging(this.id)" id="Jeremiah"><a tabindex="-1" href="#">Jeremiah</a></li>
+              <li onclick="getPaging(this.id)" id="Lamentations"><a tabindex="-1" href="#">Lamentations</a></li>
+              <li onclick="getPaging(this.id)" id="Ezekiel"><a tabindex="-1" href="#">Ezekiel</a></li>
+              <li onclick="getPaging(this.id)" id="Daniel"><a tabindex="-1" href="#">Daniel</a></li>
+              <li onclick="getPaging(this.id)" id="Hosea"><a tabindex="-1" href="#">Hosea</a></li>
+              <li onclick="getPaging(this.id)" id="Joel"><a tabindex="-1" href="#">Joel</a></li>
+              <li onclick="getPaging(this.id)" id="Amos"><a tabindex="-1" href="#">Amos</a></li>
+              <li onclick="getPaging(this.id)" id="Obadiah"><a tabindex="-1" href="#">Obadiah</a></li>
+              <li onclick="getPaging(this.id)" id="Jonah"><a tabindex="-1" href="#">Jonah</a></li>
+              <li onclick="getPaging(this.id)" id="Micah"><a tabindex="-1" href="#">Micah</a></li>
+              <li onclick="getPaging(this.id)" id="Nahum"><a tabindex="-1" href="#">Nahum</a></li>
+              <li onclick="getPaging(this.id)" id="Habakkuk"><a tabindex="-1" href="#">Habakkuk</a></li>
+              <li onclick="getPaging(this.id)" id="Zephaniah"><a tabindex="-1" href="#">Zephaniah</a></li>
+              <li onclick="getPaging(this.id)" id="Haggai"><a tabindex="-1" href="#">Haggai</a></li>
+              <li onclick="getPaging(this.id)" id="Zechariah"><a tabindex="-1" href="#">Zechariah</a></li>
+              <li onclick="getPaging(this.id)" id="Malachi"><a tabindex="-1" href="#">Malachi</a></li>
+              <li class="divider"></li>
+              <li onclick="getPaging(this.id)" id="Matthew"><a tabindex="-1" href="#">Matthew</a></li>
+              <li onclick="getPaging(this.id)" id="Mark"><a tabindex="-1" href="#">Mark</a></li>
+              <li onclick="getPaging(this.id)" id="Luke"><a tabindex="-1" href="#">Luke</a></li>
+              <li onclick="getPaging(this.id)" id="John"><a tabindex="-1" href="#">John</a></li>
+              <li onclick="getPaging(this.id)" id="Acts"><a tabindex="-1" href="#">Acts</a></li>
+              <li onclick="getPaging(this.id)" id="Romans"><a tabindex="-1" href="#">Romans</a></li>
+              <li onclick="getPaging(this.id)" id="1Corinthians"><a tabindex="-1" href="#">1 Corinthians</a></li>
+              <li onclick="getPaging(this.id)" id="2Corinthians"><a tabindex="-1" href="#">2 Corinthians</a></li>
+              <li onclick="getPaging(this.id)" id="Galatians"><a tabindex="-1" href="#">Galatians</a></li>
+              <li onclick="getPaging(this.id)" id="Ephesians"><a tabindex="-1" href="#">Ephesians</a></li>
+              <li onclick="getPaging(this.id)" id="Philippians"><a tabindex="-1" href="#">Philippians</a></li>
+              <li onclick="getPaging(this.id)" id="Colossians"><a tabindex="-1" href="#">Colossians</a></li>
+              <li onclick="getPaging(this.id)" id="1Thessalonians"><a tabindex="-1" href="#">1 Thessalonians</a></li>
+              <li onclick="getPaging(this.id)" id="2Thessalonians"><a tabindex="-1" href="#">2 Thessalonians</a></li>
+              <li onclick="getPaging(this.id)" id="1Timothy"><a tabindex="-1" href="#">1 Timothy</a></li>
+              <li onclick="getPaging(this.id)" id="2Timothy"><a tabindex="-1" href="#">2 Timothy</a></li>
+              <li onclick="getPaging(this.id)" id="Titus"><a tabindex="-1" href="#">Titus</a></li>
+              <li onclick="getPaging(this.id)" id="Philemon"><a tabindex="-1" href="#">Philemon</a></li>
+              <li onclick="getPaging(this.id)" id="Hebrews"><a tabindex="-1" href="#">Hebrews</a></li>
+              <li onclick="getPaging(this.id)" id="James"><a tabindex="-1" href="#">James</a></li>
+              <li onclick="getPaging(this.id)" id="1Peter"><a tabindex="-1" href="#">1 Peter</a></li>
+              <li onclick="getPaging(this.id)" id="2Peter"><a tabindex="-1" href="#">2 Peter</a></li>
+              <li onclick="getPaging(this.id)" id="1John"><a tabindex="-1" href="#">1 John</a></li>
+              <li onclick="getPaging(this.id)" id="2John"><a tabindex="-1" href="#">2 John</a></li>
+              <li onclick="getPaging(this.id)" id="3John"><a tabindex="-1" href="#">3 John</a></li>
+              <li onclick="getPaging(this.id)" id="Jude"><a tabindex="-1" href="#">Jude</a></li>
+              <li onclick="getPaging(this.id)" id="Revelation"><a tabindex="-1" href="#">Revelation</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="btnum1 dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chapter <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu2 scrollable-menu" role="menu" id="list">
+
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#" class="btnum2 dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Verse <span class="caret"></span></a>
+
+          <ul class="dropdown-menu dropdown-menu3 scrollable-menu" role="menu" id="list1">
+            <!--div id="liverse">
+          
+            </div-->
+
+          </ul>
+        </li>
+
+        <li id = "navmaster"  onClick="notes()" ><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+
+        <li id = "searchmaster" onClick="searchmodal()" ><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+
+
+      </ul>
+
+      
+        
+        <div id="urnam">
+          <form class="navbar-form navbar-right" role="search">
+            <button type="button" onClick="signmodal()" class="btn btn-default">Sign in</button>
+          </form>
+        
+        </div>
+
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    <!--div class="container"-->
+    <!--form action="laypython1.py" method="get"-->
+
+
+<!--div id="headstat" class="container"-->
+
+
+<!--/div closing the extra container--><!--for static header-->
+
+
+
+
+
+  
+
+
+
+
+
+      <!--div class="col-centered input-group input-group-lg">
+
+
+
+        
+  
+
+        <input style="font-size:20px" type="text" class="form-control form-control1 fostyle btn1" placeholder="Search here" name="Title" id="Title" value="" onkeyup='ajaxFunction()'>
+        
+          <span class="input-group-btn">
+          
+              <button type="submit" class="btn btn-default btn1">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+          
+            </span>
+          
+          
+        
+        
+      </div-->
+
+
+    <!--/form-->
+
+
+
+    <!--
+    <div class="panel-body">
+        <p>Example</p>
+
+         An right to left primary's style overlay
+
+        <div class="panel-primary-overlay-down">
+            <p>Your Overlay!</p>
+        </div>
+    </div>
+  -->
+
+
+
+    
+
+    
+    <div id="myDiv" class="container">
+
+    </div>
+    <div id="myDivtep" class="container">
+      <br><br><b>
+      PLEASE SIGN IN FIRST TO ACCESS THE BIBLE CONTENTS.
+</b>
+    </div>
+
+<!--Overlay Bootstrap -->
+
+
+
+
+  <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Notes</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                      <div id="noteit">
+                      </div>
+                    </p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                    
+                    <div class="form-group">
+                      <label for="comment">Comment:</label>
+                      <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="sendnotes()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Modal for searching -->
+    <div id="myModalsearch" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Start your search</h4>
+                </div>
+                <div class="modal-body">
+
+                  <div class="input-group">
+                    
+                    <input id="searchqry" type="text" class="form-control" placeholder="Search here.." aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2"><a href="#"><span onclick="searchqry()" class="glyphicon glyphicon-search" aria-hidden="true"></span></a></span>
+                    
+                  </div>
+                  <br>
+
+                <ul class="list-group">
+                  <div id="rslt">
+                     
+                  </div>
+                </ul>
+
+                      
+
+
+                    
+                  
+                </div>
+
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+ 
+
+    	<!--Modal for loading -->
+    <div id="myModaload" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Loading .. bare with us plz.</h4>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Modal for signing in-->
+    <div id="myModalsignin" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Signin</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-signin">
+                      <h2 id="willchange" class="form-signin-heading">Please sign in</h2>
+                      <label for="inputEmail" class="sr-only">Email address</label>
+                      <input type="text" id="inputEmail" class="form-control" placeholder="Username" autofocus>
+                      <label for="inputPassword" class="sr-only">Password</label>
+                      <input type="password" id="inputPassword" class="form-control" placeholder="Password">
+                      <div class="check-box">Forgot your username or password?? Check your mail</div><br>
+                      <button class="btn btn-lg btn-primary btn-block" type="button" onclick="login()">Sign in</button>
+                
+                    </form>
+                  
+                </div>
+                <div class="modal-footer">
+                    <div class="check-box">Don't have an account ?</div>
+                    <button type="button" class="btn btn-primary" onclick="joinmodalf()">Join us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <!--Modal for creating-->
+    <div id="myModalcreating" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Join us</h4>
+                </div>
+                <div class="modal-body">
+                  <div id="myarea">
+                    <form class="form-signin" id="loginForm" >
+                      <h2 id="willchangec" class="form-signin-heading">Fill all the fields</h2>
+                      <label for="inputEmail" class="sr-only">Email address</label>
+                      <input type="text" id="inputEmaili" class="form-control" placeholder="Choose a username">
+                      <label for="inputPassword" class="sr-only">Password</label>
+                      <input type="password" id="inputPasswordi" class="form-control" placeholder="Password">
+                      
+                      <label for="inputPasswordconfirm" class="sr-only">Repeat Password</label>
+                      <input type="password" id="inputPasswordiconfirm" class="form-control" placeholder="Repeat Password">                      
+
+                      <label for="realinputEmail" class="sr-only">Email address</label>
+                      <input type="text" id="realinputEmaili" class="form-control" placeholder="email id, for sending ur login details"><br>
+                      <button class="btn btn-lg btn-primary btn-block" type="button" onclick="creating()">Create</button>
+                    </form>
+                  </div>
+                  
+                </div>
+                <div class="modal-footer">
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+  <!--/div closing the container--> 
+
+    
+    
+      
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+   
+    <script src="codejqueryv21/jquery.js"></script>
+     
+
+    
+     
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="myScript.js"></script>
+
+
+    
+  </body>
+</html>
